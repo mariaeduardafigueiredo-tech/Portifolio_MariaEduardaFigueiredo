@@ -55,7 +55,7 @@ body::before {
 .blob-1 {
   width: 500px;
   height: 500px;
-  background: rgba(1, 2, 59, 0.781)
+  background: rgba(1, 2, 59, 0.781);
   top: -100px;
   left: -150px;
   animation-delay: 0s;
@@ -210,8 +210,6 @@ section {
   background: linear-gradient(90deg, var(--text), transparent);
 }
 
-
-
 .hero-title {
   font-size: 30px;
   font-weight: 900;
@@ -226,7 +224,7 @@ section {
 }
 
 .hero-title .highlight {
-   background: linear-gradient(135deg, var(--text) 0%, rgba(31, 4, 238, 0.95) 100%);
+  background: linear-gradient(135deg, var(--text) 0%, rgba(31, 4, 238, 0.95) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -317,9 +315,8 @@ section {
 
 .btn-secondary {
  background: linear-gradient(135deg, var(--), var(--purple));
-   color: white;
+  color: white;
   box-shadow: 0 10px 30px rgba(1, 2, 59, 0.781);
-  /*border: 2px solid var(--border);*/
 }
  
 .btn-secondary:hover {
@@ -333,7 +330,7 @@ section {
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  margin-top: -200px; /* se quiser manter a posição */
+  margin-top: -220px; /* se quiser manter a posição */
   right: -1;
   height: 700px;  
   width: 800px;
@@ -349,8 +346,8 @@ section {
 
 .visual-card {
   position: static;
-  width: 100%;/*TAMANHO DA BORDA*/
-  height: 60%;
+  width: 110%;/*TAMANHO DA BORDA*/
+  height: 80%;
   border-radius: 40px;/*FORMATO DA BORDA*/
   box-shadow: 0 0px 4px rgba(5, 1, 63, 0.767);
   background: linear-gradient(135deg, rgba(1, 10, 95, 0.1), rgba(1, 5, 49, 0.1)); 
