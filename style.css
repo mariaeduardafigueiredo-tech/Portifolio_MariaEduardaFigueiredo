@@ -29,6 +29,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
+   min-width: 1024px; /* Garante que o site não encolha menos que isso */
 }
 
 /* ── NOISE OVERLAY ── */
@@ -149,6 +150,8 @@ nav img.nav-logo {
 
 /* ── CONTAINER ── */
 .container {
+  width: 1024px; /* Largura fixa igual no desktop e mobile */
+    margin: 0 auto;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -903,48 +906,45 @@ section {
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 1024px) {
+@media (max-width: 560px) {
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
     text-align: center;
   }
 
+  .hero-content {
+    text-align: center;
+    order: 2;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero-visual {
-    order: -1; /* imagem sobe */
-    max-width: 250px;
-    display: none;
+    order: 1;
+    margin-bottom: 1rem;
   }
 
-  .timeline::before {
-    left: 30px;
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .timeline-marker {
-    left: 30px;
-  }
-
-  .timeline-content {
-    width: calc(100% - 80px);
-    margin-left: 80px !important;
-    padding-left: 3rem;
-    padding-right: 1.8rem;
-  }
-
-  .timeline-item:nth-child(even) .timeline-content {
-    margin-left: 80px !important;
-    padding-left: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    padding: 1rem 1.5rem;
+  .hero-cta {
+    justify-content: center;
   }
 
   .nav-links {
     display: none;
   }
+
+  .menu-toggle {
+    display: block;
+  }
+}
 
   .hero-section {
     padding: 6rem 0 2rem;
